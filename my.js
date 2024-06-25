@@ -39,7 +39,7 @@ ytlinks.forEach(
   (link)=>{
     link.addEventListener("click",()=>{
       ytplayeroverlay.classList.add("active");
-      let videolink = `https://www.youtube.com/embed/${link.dataset.linker}&autoplay=1`;
+      let videolink = `https://www.youtube.com/embed/${link.dataset.linker}&autoplay=1&controls=1`;
       ytplayerpopup.src = videolink;
       console.log(ytplayerpopup);
     });
