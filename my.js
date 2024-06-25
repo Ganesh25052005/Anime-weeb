@@ -8,7 +8,7 @@ function scrollFunction(){
     // console.log(document.body.scrollTop());
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
         mybtnnn.style.opacity="1";
-        mybtnnn.style.transition="0.3s";
+        mybtnnn.style.transition="0.6s";
     }
     else mybtnnn.style.opacity="0";
 }
