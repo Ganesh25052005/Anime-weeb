@@ -7,10 +7,10 @@ window.onscroll = function(){
 function scrollFunction(){
     // console.log(document.body.scrollTop());
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
-        mybtnnn.style.display="block";
-        // mybtnnn.style.animation="shake 0.25s";
+        mybtnnn.style.opacity="1";
+        mybtnnn.style.transition="0.3s";
     }
-    else mybtnnn.style.display  = "none";
+    else mybtnnn.style.opacity="0";
 }
 
 function topFunction() {
@@ -19,7 +19,8 @@ function topFunction() {
 
 
 let slid=document.querySelector(".slider");
-let slidervalue = 240;
+let value=document.querySelector(".trend-items");
+let slidervalue = value.clientWidth +10;
 let left_slid = document.querySelector("#left-slider");
 let right_slid = document.querySelector("#right-slider");
 
