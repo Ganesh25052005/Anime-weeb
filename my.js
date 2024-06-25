@@ -31,3 +31,24 @@ left_slid.addEventListener("click",() =>{
 right_slid.addEventListener("click",() =>{
     slid.scrollLeft += slidervalue;
   })
+
+const ytplayeroverlay = document.querySelector(".youtube-player-overlay");
+const ytlinks = document.querySelectorAll(".trend-poster");
+const ytplayerpopup = document.getElementById("omgiframe");
+ytlinks.forEach(
+  (link)=>{
+    link.addEventListener("click",()=>{
+      ytplayeroverlay.classList.add("active");
+      let videolink = `https://www.youtube.com/embed/${link.dataset.linker}&autoplay=1&controls=0`;
+      ytplayerpopup.src = videolink;
+      console.log(ytplayerpopup);
+    });
+  }
+);
+
+ytplayeroverlay.addEventListener("click",()=>{
+  ytplayeroverlay.classList.remove("active");
+  ytplayerpopup.src = "";
+});
+
+
