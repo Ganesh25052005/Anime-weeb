@@ -16,7 +16,7 @@ body{
 }
 #mybtn{
     background-color:#5b5f5f;
-    display:none;
+    /* display:none; */
     position: fixed;
     z-index: 99;
     right: 20px;
@@ -25,7 +25,7 @@ body{
     border-radius: 20px;
     bottom: 20px;
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0;
     text-align: center;
 }
 #mybtn i{
@@ -150,12 +150,13 @@ body{
     
 }
 .slider{
+    /* background-color: #fb3958; */
     display: flex;
     flex-shrink: 0;
+    gap: 10px;
     box-sizing: content-box;
     float: left;
-    width: 95%;
-    padding-right: 20px;
+    width: 96%;
     overflow-x: auto;
     scrollbar-width: none;
 }
@@ -172,7 +173,7 @@ body{
     position: relative;
     height: 300px;
     width: 275px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     /* overflow: hidden; */
 
 }
@@ -200,6 +201,7 @@ body{
     height: 40px;
     transform: rotate(-90deg);
     padding-top: 4px;
+    line-height: 30px;
     position: absolute;
     bottom: 90px;
     width: 150px;
@@ -265,7 +267,7 @@ body{
     height: 300px;
     width: 40px;
     position: absolute;
-    margin-right: 8px;
+    margin-right: 10px;
     right: 0;
 }
 .slid-class{
